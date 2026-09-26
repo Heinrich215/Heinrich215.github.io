@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>S.T.A.L.K.E.R. — Българска локализация</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #111;
+            color: #d6d6d6;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+                radial-gradient(circle at center, #4b4b32 0%, #202018 45%, #090909 100%);
+            border-bottom: 2px solid #6d6d35;
+        }
+
+        .hero {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 82px);
+            letter-spacing: 6px;
+            color: #d8d89b;
+            text-shadow: 0 0 15px rgba(190,190,100,0.35);
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: clamp(20px, 3vw, 32px);
+            font-weight: normal;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #bbb;
+            font-size: 18px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(10,10,10,0.96);
+            border-bottom: 1px solid #444;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #d8d89b;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        section h2 {
+            color: #d8d89b;
+            font-size: 32px;
+            margin-bottom: 25px;
+            border-left: 4px solid #77773b;
+            padding-left: 15px;
+        }
+
+        section p {
+            color: #aaa;
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .game {
+            background: #1a1a1a;
+            border: 1px solid #383838;
+            padding: 25px;
+            transition: 0.2s;
+        }
+
+        .game:hover {
+            border-color: #77773b;
+            transform: translateY(-3px);
+        }
+
+        .game h3 {
+            color: #d0d08b;
+            margin-bottom: 10px;
+        }
+
+        .game p {
+            font-size: 15px;
+        }
+
+        .download {
+            text-align: center;
+            background: #181811;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #77773b;
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #a0a060;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #292929;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="hero">
+        <h1>S.T.A.L.K.E.R.</h1>
+        <h2>Българска локализация</h2>
+
+        <p>
+            Български превод на игрите от поредицата S.T.A.L.K.E.R.
+            и техните модификации.
+        </p>
+    </div>
+</header>
+
+<nav>
+    <a href="#za-proekta">За проекта</a>
+    <a href="#igri">Игри</a>
+    <a href="#izteglyane">Изтегляне</a>
+    <a href="#kontakt">Контакти</a>
+</nav>
+
+<section id="za-proekta">
+    <h2>За проекта</h2>
+
+    <p>
+        Добре дошли в страницата на българската локализация
+        на S.T.A.L.K.E.R.
+    </p>
+
+    <p>
+        Проектът има за цел да направи света на Зоната достъпен
+        за българските играчи на родния им език, като запази
+        атмосферата, терминологията и духа на оригиналните игри.
+    </p>
+</section>
+
+<section id="igri">
+    <h2>Игри</h2>
+
+    <div class="games">
+
+        <div class="game">
+            <h3>Shadow of Chernobyl</h3>
+            <p>
+                Българска локализация на първата игра от поредицата.
+            </p>
+        </div>
+
+        <div class="game">
+            <h3>Clear Sky</h3>
+            <p>
+                Българска локализация на S.T.A.L.K.E.R.: Clear Sky.
+            </p>
+        </div>
+
+        <div class="game">
+            <h3>Call of Pripyat</h3>
+            <p>
+                Българска локализация на S.T.A.L.K.E.R.: Call of Pripyat.
+            </p>
+        </div>
+
+        <div class="game">
+            <h3>Anomaly и модификации</h3>
+            <p>
+                Преводи и локализация на съдържание за различни
+                модификации и проекти на S.T.A.L.K.E.R.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="izteglyane" class="download">
+    <h2>Изтегляне</h2>
+
+    <p>
+        Тук ще бъдат публикувани файловете на българските локализации,
+        инструкции за инсталация и информация за актуалните версии.
+    </p>
+
+    <a href="#" class="button">Очаквайте скоро</a>
+</section>
+
+<section id="kontakt">
+    <h2>Контакти</h2>
+
+    <p>
+        Информация за проекта, обратна връзка и бъдещи актуализации
+        ще бъдат публикувани тук.
+    </p>
+</section>
+
+<footer>
+    © 2026 Heinrich215 — S.T.A.L.K.E.R. Българска локализация
+</footer>
+
+</body>
+</html>
