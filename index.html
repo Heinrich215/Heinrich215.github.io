@@ -127,7 +127,43 @@
         .game p {
             font-size: 15px;
         }
+.game-category {
+    margin-top: 45px;
+}
 
+.game-category h3 {
+    color: #d0d08b;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.game-category > p {
+    max-width: 900px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.game-item {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 15px 18px;
+    color: #bbb;
+    transition: 0.2s;
+}
+
+.game-item:hover {
+    border-color: #77773b;
+    color: #d8d89b;
+    transform: translateY(-2px);
+}
         .download {
             text-align: center;
             background: #181811;
@@ -205,38 +241,66 @@
 <section id="igri">
     <h2>Игри</h2>
 
-    <div class="games">
+    <div class="game-category">
+        <h3>Готови преводи</h3>
+        <p>
+            Преводите в тази категория са завършени и готови за използване.
+            При наличност тук ще бъдат публикувани и съответните файлове и инструкции за инсталация.
+        </p>
 
-        <div class="game">
-            <h3>Shadow of Chernobyl</h3>
-            <p>
-                Българска локализация на първата игра от поредицата.
-            </p>
+        <div class="game-list">
+            <div class="game-item">S.T.A.L.K.E.R.: Shadow of Chernobyl</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Shadow of Chernobyl — Enhanced Edition</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Clear Sky</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Clear Sky — Enhanced Edition</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Call of Pripyat</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Call of Pripyat — Enhanced Edition</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Call of Chernobyl</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Lost Alpha — Enhanced Edition</div>
         </div>
-
-        <div class="game">
-            <h3>Clear Sky</h3>
-            <p>
-                Българска локализация на S.T.A.L.K.E.R.: Clear Sky.
-            </p>
-        </div>
-
-        <div class="game">
-            <h3>Call of Pripyat</h3>
-            <p>
-                Българска локализация на S.T.A.L.K.E.R.: Call of Pripyat.
-            </p>
-        </div>
-
-        <div class="game">
-            <h3>Anomaly и модификации</h3>
-            <p>
-                Преводи и локализация на съдържание за различни
-                модификации и проекти на S.T.A.L.K.E.R.
-            </p>
-        </div>
-
     </div>
+
+    <div class="game-category">
+        <h3>В процес на редакция</h3>
+        <p>
+            Преводите са завършени, но в момента се извършва преглед и редакция
+            на текста, терминологията и отделните елементи на локализацията.
+        </p>
+
+        <div class="game-list">
+            <div class="game-item">S.T.A.L.K.E.R.: Lost Alpha</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Lost Alpha — DC Extended Edition</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Anomaly</div>
+        </div>
+    </div>
+
+    <div class="game-category">
+        <h3>В процес на превод</h3>
+        <p>
+            Работата по тези проекти е в ход. Превеждат се текстовете и съдържанието
+            постепенно се обработва и уеднаквява с установената терминология на българската локализация.
+        </p>
+
+        <div class="game-list">
+            <div class="game-item">S.T.A.L.K.E.R.: Anomaly Custom</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Escape from Pripyat</div>
+            <div class="game-item">S.T.A.L.K.E.R.: GAMMA</div>
+            <div class="game-item">S.T.A.L.K.E.R.: Народная Солянка OGSR</div>
+        </div>
+    </div>
+
+    <div class="game-category">
+        <h3>Преводът не е започнат</h3>
+        <p>
+            Тези проекти са предвидени за бъдеща локализация,
+            но работата по тях все още не е започнала.
+        </p>
+
+        <div class="game-list">
+            <div class="game-item">S.T.A.L.K.E.R.: Wind of Time</div>
+        </div>
+    </div>
+
 </section>
 
 <section id="izteglyane" class="download">
