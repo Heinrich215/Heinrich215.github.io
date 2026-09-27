@@ -38,29 +38,39 @@
         }
 
 .hero h1 {
-    font-size: clamp(44px, 7.5vw, 90px);
+    font-size: clamp(40px, 7vw, 82px);
     font-weight: 800;
     letter-spacing: 8px;
     margin-bottom: 15px;
 
     background:
+        radial-gradient(circle at 8% 30%, rgba(20,15,8,.75) 0 3px, transparent 4px),
+        radial-gradient(circle at 18% 65%, rgba(15,12,7,.9) 0 4px, transparent 5px),
+        radial-gradient(circle at 29% 25%, rgba(25,18,8,.8) 0 3px, transparent 5px),
+        radial-gradient(circle at 41% 72%, rgba(15,12,7,.85) 0 4px, transparent 6px),
+        radial-gradient(circle at 53% 40%, rgba(20,15,8,.8) 0 3px, transparent 5px),
+        radial-gradient(circle at 65% 68%, rgba(15,12,7,.9) 0 4px, transparent 6px),
+        radial-gradient(circle at 77% 28%, rgba(25,18,8,.8) 0 3px, transparent 5px),
+        radial-gradient(circle at 90% 58%, rgba(15,12,7,.9) 0 4px, transparent 6px),
         linear-gradient(
             180deg,
-            #d18a24 0%,
-            #c27616 35%,
-            #a85f0d 65%,
-            #713b08 100%
+            #d08a25 0%,
+            #bd7117 35%,
+            #9b520c 65%,
+            #713907 100%
         );
 
     -webkit-background-clip: text;
     background-clip: text;
+
     -webkit-text-fill-color: transparent;
+    color: transparent;
 
     text-shadow:
-        0 0 8px rgba(180, 105, 20, 0.22),
-        0 0 22px rgba(100, 60, 10, 0.16);
+        0 0 8px rgba(180,105,20,.20),
+        0 0 22px rgba(100,60,10,.14);
 
-    -webkit-text-stroke: 1px rgba(35, 25, 10, 0.45);
+    -webkit-text-stroke: 1px rgba(35,25,10,.45);
 }
 
         .hero h2 {
