@@ -37,14 +37,33 @@
             max-width: 900px;
         }
 
-        .hero h1 {
-            font-size: clamp(44px, 7.5vw, 90px);
-            font-weight: 700;
-            letter-spacing: 6px;
-            color: #a6a05a;
-            text-shadow: 0 0 15px rgba(190,190,100,0.35);
-            margin-bottom: 15px;
-        }
+.hero h1 {
+    font-size: clamp(44px, 7.5vw, 90px);
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+
+    background:
+        radial-gradient(circle at 12% 35%, #111 0 2px, transparent 3px),
+        radial-gradient(circle at 23% 65%, #111 0 3px, transparent 4px),
+        radial-gradient(circle at 31% 28%, #17130b 0 2px, transparent 4px),
+        radial-gradient(circle at 44% 72%, #111 0 3px, transparent 5px),
+        radial-gradient(circle at 57% 38%, #15120b 0 2px, transparent 4px),
+        radial-gradient(circle at 68% 67%, #111 0 3px, transparent 5px),
+        radial-gradient(circle at 78% 30%, #17130b 0 2px, transparent 4px),
+        radial-gradient(circle at 91% 58%, #111 0 3px, transparent 5px),
+        linear-gradient(180deg, #c47b18 0%, #a85f0d 45%, #7d4309 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-shadow:
+        0 0 8px rgba(180,105,20,0.18),
+        0 0 22px rgba(100,60,10,0.12);
+
+    -webkit-text-stroke: 1px rgba(35,25,10,0.35);
+}
 
         .hero h2 {
             font-size: clamp(20px, 3vw, 32px);
