@@ -37,42 +37,30 @@
             max-width: 900px;
         }
 
-.hero h1 {
-font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-font-size: clamp(46px, 7.8vw, 94px);
-font-weight: 900;
-letter-spacing: 9px;
-margin-bottom: 15px;
+        .stalker-logo {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 0 auto 25px auto;
+            filter:
+                drop-shadow(0 0 25px rgba(194, 122, 28, 0.35))
+                drop-shadow(0 0 60px rgba(150, 80, 10, 0.20));
+            animation: stalker-glow 4s ease-in-out infinite alternate;
+        }
 
-background:
-    radial-gradient(ellipse at 8% 25%, #16130e 0 4%, transparent 7%),
-    radial-gradient(ellipse at 17% 72%, #21180d 0 5%, transparent 9%),
-    radial-gradient(ellipse at 29% 38%, #111 0 3%, transparent 6%),
-    radial-gradient(ellipse at 41% 78%, #17130c 0 6%, transparent 10%),
-    radial-gradient(ellipse at 53% 27%, #21170b 0 4%, transparent 8%),
-    radial-gradient(ellipse at 64% 65%, #111 0 5%, transparent 9%),
-    radial-gradient(ellipse at 76% 34%, #1b150d 0 6%, transparent 10%),
-    radial-gradient(ellipse at 88% 72%, #111 0 4%, transparent 8%),
-    linear-gradient(
-        180deg,
-        #c27a1c 0%,
-        #ad6813 38%,
-        #98550d 68%,
-        #754009 100%
-    );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-
-    text-shadow:
-        0 0 8px rgba(180,105,20,.20),
-        0 0 22px rgba(100,60,10,.14);
-
-    -webkit-text-stroke: 1px rgba(35,25,10,.45);
-}
+        @keyframes stalker-glow {
+            0% {
+                filter:
+                    drop-shadow(0 0 20px rgba(194, 122, 28, 0.30))
+                    drop-shadow(0 0 50px rgba(150, 80, 10, 0.15));
+            }
+            100% {
+                filter:
+                    drop-shadow(0 0 35px rgba(194, 122, 28, 0.55))
+                    drop-shadow(0 0 80px rgba(150, 80, 10, 0.30));
+            }
+        }
 
         .hero h2 {
             font-size: clamp(20px, 3vw, 32px);
@@ -129,70 +117,44 @@ background:
             margin-bottom: 15px;
         }
 
-        .games {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
+        .game-category {
+            margin-top: 45px;
         }
 
-        .game {
+        .game-category h3 {
+            color: #d0d08b;
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .game-category > p {
+            max-width: 900px;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 10px;
+        }
+
+        .game-item {
             background: #1a1a1a;
-            border: 1px solid #383838;
-            padding: 25px;
+            border: 1px solid #333;
+            padding: 15px 18px;
+            color: #bbb;
             transition: 0.2s;
         }
 
-        .game:hover {
+        .game-item:hover {
             border-color: #77773b;
-            transform: translateY(-3px);
+            color: #d8d89b;
+            transform: translateY(-2px);
         }
 
-        .game h3 {
-            color: #d0d08b;
-            margin-bottom: 10px;
-        }
-
-        .game p {
-            font-size: 15px;
-        }
-.game-category {
-    margin-top: 45px;
-}
-
-.game-category h3 {
-    color: #d0d08b;
-    font-size: 24px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-}
-
-.game-category > p {
-    max-width: 900px;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-.game-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 10px;
-}
-
-.game-item {
-    background: #1a1a1a;
-    border: 1px solid #333;
-    padding: 15px 18px;
-    color: #bbb;
-    transition: 0.2s;
-}
-
-.game-item:hover {
-    border-color: #77773b;
-    color: #d8d89b;
-    transform: translateY(-2px);
-}
         .download {
             text-align: center;
             background: #181811;
