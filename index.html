@@ -21,15 +21,18 @@
         }
 
         header {
-            min-height: 70vh;
+            min-height: 55vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 40px 20px;
-            background:
-                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
-                radial-gradient(circle at center, #4b4b32 0%, #202018 45%, #090909 100%);
+            padding: 60px 20px;
+            background-color: #0a0a0a;
+            background-image:
+                radial-gradient(ellipse at 20% 30%, rgba(40,40,40,0.6) 0%, transparent 55%),
+                radial-gradient(ellipse at 80% 70%, rgba(30,30,30,0.6) 0%, transparent 55%),
+                radial-gradient(ellipse at 50% 50%, rgba(20,20,20,0.8) 0%, transparent 70%),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.18 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
             border-bottom: 2px solid #6d6d35;
         }
 
@@ -40,40 +43,26 @@
         .stalker-logo {
             display: block;
             width: 100%;
-            max-width: 600px;
+            max-width: 450px;
             height: auto;
             margin: 0 auto 25px auto;
             filter:
-                drop-shadow(0 0 25px rgba(194, 122, 28, 0.35))
-                drop-shadow(0 0 60px rgba(150, 80, 10, 0.20));
-            animation: stalker-glow 4s ease-in-out infinite alternate;
-        }
-
-        @keyframes stalker-glow {
-            0% {
-                filter:
-                    drop-shadow(0 0 20px rgba(194, 122, 28, 0.30))
-                    drop-shadow(0 0 50px rgba(150, 80, 10, 0.15));
-            }
-            100% {
-                filter:
-                    drop-shadow(0 0 35px rgba(194, 122, 28, 0.55))
-                    drop-shadow(0 0 80px rgba(150, 80, 10, 0.30));
-            }
+                drop-shadow(0 0 20px rgba(194, 122, 28, 0.30))
+                drop-shadow(0 0 50px rgba(150, 80, 10, 0.18));
         }
 
         .hero h2 {
-            font-size: clamp(20px, 3vw, 32px);
+            font-size: clamp(20px, 3vw, 30px);
             font-weight: normal;
             color: #aaa;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .hero p {
             max-width: 700px;
             margin: auto;
             color: #bbb;
-            font-size: 18px;
+            font-size: 17px;
         }
 
         nav {
@@ -197,7 +186,7 @@
 
 <header>
     <div class="hero">
-        <img src="images/stalker-logo.webp" alt="S.T.A.L.K.E.R. — Българска локализация" class="stalker-logo">
+        <img src="images/stalker-logo.png" alt="S.T.A.L.K.E.R. — Българска локализация" class="stalker-logo">
         <h2>Българска локализация</h2>
 
         <p>
