@@ -20,7 +20,7 @@
             line-height: 1.6;
         }
 
-        /* -------- HERO -------- */
+									
         header {
             padding: 40px 20px;
             background-color: #0a0a0a;
@@ -59,7 +59,7 @@
             margin-bottom: 10px;
         }
 
-        /* -------- NAV -------- */
+								   
         nav {
             position: sticky;
             top: 0;
@@ -81,14 +81,14 @@
             color: #d8d89b;
         }
 
-        /* -------- MAIN -------- */
+									
         main {
             max-width: 1000px;
             margin: auto;
             padding: 50px 25px;
         }
 
-        /* -------- GAME HEADER (cover + info) -------- */
+														  
         .game-header {
             display: flex;
             gap: 30px;
@@ -98,17 +98,18 @@
         }
 
         .game-cover {
-            flex: 0 0 220px;
-            aspect-ratio: 3 / 4;
+            flex: 0 0 280px;
+								
             background: #1a1a1a;
             border: 1px solid #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #555;
-            font-size: 13px;
-            text-align: center;
-            padding: 20px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .game-cover img {
+            display: block;
+            width: 100%;
+            height: auto;
         }
 
         .game-info {
@@ -128,7 +129,7 @@
             margin-bottom: 20px;
         }
 
-        /* -------- META (status, version, etc.) -------- */
+															
         .meta-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -158,7 +159,7 @@
             font-weight: bold;
         }
 
-        /* -------- STATUS BADGES -------- */
+											 
         .status {
             display: inline-block;
             padding: 5px 12px;
@@ -192,7 +193,7 @@
             border: 1px solid #555;
         }
 
-        /* -------- SECTIONS -------- */
+										
         section {
             margin-bottom: 45px;
         }
@@ -227,7 +228,7 @@
             border-radius: 3px;
         }
 
-        /* -------- TEAM -------- */
+									
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -256,7 +257,7 @@
             font-weight: bold;
         }
 
-        /* -------- DOWNLOAD BUTTONS -------- */
+												
         .download-buttons {
             display: flex;
             gap: 15px;
@@ -308,7 +309,7 @@
             font-style: italic;
         }
 
-        /* -------- FOOTER -------- */
+									  
         footer {
             text-align: center;
             padding: 40px 20px 30px 20px;
@@ -343,7 +344,7 @@
 
             .game-cover {
                 flex: 0 0 100%;
-                aspect-ratio: 16 / 9;
+									 
             }
 
             .btn {
@@ -369,17 +370,17 @@
 
 <main>
 
-    <!-- ГОРНА ЧАСТ: корица + инфо -->
+														 
     <div class="game-header">
         <div class="game-cover">
-            [ТУК ЩЕ СЛОЖИМ КОРИЦАТА НА ИГРАТА]
+            <img src="images/cs.jpg" alt="S.T.A.L.K.E.R.: Clear Sky">
         </div>
 
         <div class="game-info">
             <h2>Clear Sky</h2>
 
             <p class="game-description">
-                Втората игра от легендарната поредица S.T.A.L.K.E.R.
+                Третата игра от легендарната поредица S.T.A.L.K.E.R.
                 Действието се развива в Зоната на отчуждение около
                 Чернобилската АЕЦ. Вие сте Сталкер, който се събужда
                 без спомени и трябва да разкрие тайните на Зоната.
@@ -406,7 +407,7 @@
         </div>
     </div>
 
-    <!-- ИНСТАЛАЦИЯ -->
+								 
     <section>
         <h3>Стъпки за инсталация</h3>
         <div class="install-steps">
@@ -420,7 +421,7 @@
         </div>
     </section>
 
-    <!-- ЕКИП -->
+					 
     <section>
         <h3>Екип по превода</h3>
         <div class="team-grid">
@@ -439,7 +440,7 @@
         </div>
     </section>
 
-    <!-- ИЗТЕГЛЯНЕ -->
+							   
     <section>
         <h3>Изтегляне</h3>
         <p>
@@ -448,7 +449,7 @@
         </p>
 
         <div class="download-buttons">
-            <a href="https://github.com/Heinrich215/Heinrich215.github.io/releases/download/cs-v1.0/stalker-cs-bg-v1.0.zip" class="btn btn-translation" target="_blank">
+            <a href="#" class="btn btn-translation" target="_blank">
                 📥 ИЗТЕГЛИ ПРЕВОДА
             </a>
             <a href="https://pb.wtf/game/413985/" class="btn btn-game" target="_blank" rel="noopener noreferrer">
