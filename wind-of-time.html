@@ -20,7 +20,6 @@
             line-height: 1.6;
         }
 
-        /* -------- HERO -------- */
         header {
             padding: 40px 20px;
             background-color: #0a0a0a;
@@ -59,7 +58,6 @@
             margin-bottom: 10px;
         }
 
-        /* -------- NAV -------- */
         nav {
             position: sticky;
             top: 0;
@@ -81,14 +79,12 @@
             color: #d8d89b;
         }
 
-        /* -------- MAIN -------- */
         main {
             max-width: 1000px;
             margin: auto;
             padding: 50px 25px;
         }
 
-        /* -------- GAME HEADER (cover + info) -------- */
         .game-header {
             display: flex;
             gap: 30px;
@@ -97,19 +93,19 @@
             flex-wrap: wrap;
         }
 
-.game-cover {
-    flex: 0 0 280px;
-    background: #1a1a1a;
-    border: 1px solid #333;
-    overflow: hidden;
-    border-radius: 12px;
-}
+        .game-cover {
+            flex: 0 0 280px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            overflow: hidden;
+            border-radius: 12px;
+        }
 
-.game-cover img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+        .game-cover img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
         .game-info {
             flex: 1;
@@ -124,11 +120,23 @@
 
         .game-description {
             color: #bbb;
-            font-size: 16px;
+            font-size: 15px;
             margin-bottom: 20px;
         }
 
-        /* -------- META (status, version, etc.) -------- */
+        .game-description p {
+            margin-bottom: 12px;
+        }
+
+        .game-description strong {
+            color: #d8d89b;
+            display: block;
+            margin-bottom: 3px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         .meta-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -158,7 +166,6 @@
             font-weight: bold;
         }
 
-        /* -------- STATUS BADGES -------- */
         .status {
             display: inline-block;
             padding: 5px 12px;
@@ -175,9 +182,9 @@
         }
 
         .status-editing {
-            background: rgba(180, 140, 30, 0.2);
-            color: #d8b050;
-            border: 1px solid #8a6a20;
+            background: rgba(120, 80, 30, 0.25);
+            color: #c8862a;
+            border: 1px solid #8a5a1a;
         }
 
         .status-translating {
@@ -186,13 +193,12 @@
             border: 1px solid #3a6a9a;
         }
 
-.status-not-started {
-    background: rgba(80, 80, 80, 0.25);
-    color: #888;
-    border: 1px solid #444;
-}
+        .status-not-started {
+            background: rgba(80, 80, 80, 0.25);
+            color: #888;
+            border: 1px solid #444;
+        }
 
-        /* -------- SECTIONS -------- */
         section {
             margin-bottom: 45px;
         }
@@ -227,7 +233,6 @@
             border-radius: 3px;
         }
 
-        /* -------- TEAM -------- */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -256,7 +261,6 @@
             font-weight: bold;
         }
 
-        /* -------- DOWNLOAD BUTTONS -------- */
         .download-buttons {
             display: flex;
             gap: 15px;
@@ -308,7 +312,6 @@
             font-style: italic;
         }
 
-        /* -------- FOOTER -------- */
         footer {
             text-align: center;
             padding: 40px 20px 30px 20px;
@@ -343,7 +346,6 @@
 
             .game-cover {
                 flex: 0 0 100%;
-                aspect-ratio: 16 / 9;
             }
 
             .btn {
@@ -369,44 +371,43 @@
 
 <main>
 
-    <!-- ГОРНА ЧАСТ: корица + инфо -->
     <div class="game-header">
-<div class="game-cover">
-    <img src="images/wot.png" alt="S.T.A.L.K.E.R.: Wind of Time">
-</div>
+        <div class="game-cover">
+            <img src="images/wot.jpg" alt="S.T.A.L.K.E.R.: Wind of Time">
+        </div>
 
         <div class="game-info">
             <h2>Wind of Time</h2>
 
-            <p class="game-description">
-                Третата игра от легендарната поредица S.T.A.L.K.E.R.
-                Действието се развива в Зоната на отчуждение около
-                Чернобилската АЕЦ. Вие сте Сталкер, който се събужда
-                без спомени и трябва да разкрие тайните на Зоната.
-            </p>
+            <div class="game-description">
+                <p><strong>Сюжет и концепция:</strong> S.T.A.L.K.E.R.: Wind of Time е самостоятелна глобална сюжетна модификация, базирана на платформата на Call of Pripyat, която предлага уникален научнофантастичен обрат във вселената на Сталкер. Историята започва в далечната 2048 година, когато след мега-изхвърляне през 2014 г. Зоната е започнала да се разраства неконтролируемо, заплашвайки да погълне цялата планета. Правителството и учените създават секретна машина на времето, чрез която да върнат човек назад в миналото, за да унищожи самата причина за този глобален катаклизъм.</p>
+
+                <p><strong>Главен герой:</strong> Играчът поема ролята на Демидов – военен специалист от бъдещето, който бива изпратен в миналото (есента на 2014 година), веднага след историческото свръх-изхвърляне. Демидов притежава уникални познания за това какво предстои да се случи със света, но попада в една коренно различна, по-опасна и напълно непозната Зона, където трябва да оцелее и да се внедри сред местните сталкери, без да разкрива произхода си.</p>
+
+                <p><strong>Основна мисия:</strong> Вашата основна задача е да откриете и елиминирате източника, причинил фаталното изхвърляне през 2014 г. Сюжетът е линеен, изключително кинематографичен и богат на обрати, изпращайки ви през преработени локации (като Лиманск, Агропром и Мъртвия град). Проектът се отличава с перфектна атмосфера, напълно нови авторски куестове, уникални мистични явления и отличен баланс на геймплея, който поставя историята пред безкрайния грайнд.</p>
+            </div>
 
             <div class="meta-grid">
                 <div class="meta-item">
                     <span class="label">Статус</span>
-                    <span class="status status-not-started">НЕЗАПОЧНАТ</span>
+                    <span class="status status-not-started">НЕ Е ЗАПОЧНАТ</span>
                 </div>
                 <div class="meta-item">
                     <span class="label">Версия</span>
-                    <span class="value">v1.0</span>
+                    <span class="value">—</span>
                 </div>
                 <div class="meta-item">
                     <span class="label">Дата</span>
-                    <span class="value">15.09.2026</span>
+                    <span class="value">—</span>
                 </div>
                 <div class="meta-item">
                     <span class="label">Съвместимост</span>
-                    <span class="value">Steam / GOG 1.0006</span>
+                    <span class="value">Call of Pripyat 1.6.02</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ИНСТАЛАЦИЯ -->
     <section>
         <h3>Стъпки за инсталация</h3>
         <div class="install-steps">
@@ -420,7 +421,6 @@
         </div>
     </section>
 
-    <!-- ЕКИП -->
     <section>
         <h3>Екип по превода</h3>
         <div class="team-grid">
@@ -439,24 +439,20 @@
         </div>
     </section>
 
-    <!-- ИЗТЕГЛЯНЕ -->
     <section>
         <h3>Изтегляне</h3>
         <p>
-            Можете да изтеглите само българския превод, ако вече имате играта.
-            Ако все още не притежавате играта, можете да я свалите от външен сайт (виж втория бутон).
+            Преводът за тази игра <strong>още не е започнат</strong>.
+            Следете тази страница за бъдещи актуализации.
         </p>
 
         <div class="download-buttons">
-            <a href="#" class="btn btn-translation" target="_blank">
-                📥 ИЗТЕГЛИ ПРЕВОДА
-            </a>
-            <a href="https://pb.wtf/game/413985/" class="btn btn-game" target="_blank" rel="noopener noreferrer">
+            <a href="#" class="btn btn-game" target="_blank" rel="noopener noreferrer">
                 🎮 СВАЛИ ИГРАТА (външен сайт)
             </a>
         </div>
         <span class="btn-note">
-            „Свали играта" отваря външен сайт (pb.wtf) в нов таб. Ние не хостваме самата игра.
+            „Свали играта" отваря външен сайт в нов таб. Ние не хостваме самата игра.
         </span>
     </section>
 
