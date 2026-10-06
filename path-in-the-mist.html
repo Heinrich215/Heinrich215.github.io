@@ -20,7 +20,6 @@
             line-height: 1.6;
         }
 
-        /* -------- HERO -------- */
         header {
             padding: 40px 20px;
             background-color: #0a0a0a;
@@ -59,7 +58,6 @@
             margin-bottom: 10px;
         }
 
-        /* -------- NAV -------- */
         nav {
             position: sticky;
             top: 0;
@@ -81,14 +79,12 @@
             color: #d8d89b;
         }
 
-        /* -------- MAIN -------- */
         main {
             max-width: 1000px;
             margin: auto;
             padding: 50px 25px;
         }
 
-        /* -------- GAME HEADER (cover + info) -------- */
         .game-header {
             display: flex;
             gap: 30px;
@@ -97,19 +93,19 @@
             flex-wrap: wrap;
         }
 
-.game-cover {
-    flex: 0 0 280px;
-    background: #1a1a1a;
-    border: 1px solid #333;
-    overflow: hidden;
-    border-radius: 12px;
-}
+        .game-cover {
+            flex: 0 0 280px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            overflow: hidden;
+            border-radius: 12px;
+        }
 
-.game-cover img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+        .game-cover img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
         .game-info {
             flex: 1;
@@ -122,26 +118,25 @@
             margin-bottom: 15px;
         }
 
-.game-description {
-    color: #bbb;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
+		.game-description {
+			color: #bbb;
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
 
-.game-description p {
-    margin-bottom: 12px;
-}
+		.game-description p {
+			margin-bottom: 12px;
+		}
 
-.game-description strong {
-    color: #d8d89b;
-    display: block;
-    margin-bottom: 3px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+		.game-description strong {
+			color: #d8d89b;
+			display: block;
+			margin-bottom: 3px;
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
 
-        /* -------- META (status, version, etc.) -------- */
         .meta-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -171,7 +166,6 @@
             font-weight: bold;
         }
 
-        /* -------- STATUS BADGES -------- */
         .status {
             display: inline-block;
             padding: 5px 12px;
@@ -187,11 +181,11 @@
             border: 1px solid #4a7a30;
         }
 
-        .status-editing {
-            background: rgba(180, 140, 30, 0.2);
-            color: #d8b050;
-            border: 1px solid #8a6a20;
-        }
+		.status-editing {
+			background: rgba(120, 80, 30, 0.25);
+			color: #c8862a;
+			border: 1px solid #8a5a1a;
+		}
 
         .status-translating {
             background: rgba(60, 120, 180, 0.2);
@@ -205,7 +199,6 @@
             border: 1px solid #555;
         }
 
-        /* -------- SECTIONS -------- */
         section {
             margin-bottom: 45px;
         }
@@ -240,7 +233,6 @@
             border-radius: 3px;
         }
 
-        /* -------- TEAM -------- */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -269,7 +261,6 @@
             font-weight: bold;
         }
 
-        /* -------- DOWNLOAD BUTTONS -------- */
         .download-buttons {
             display: flex;
             gap: 15px;
@@ -321,7 +312,6 @@
             font-style: italic;
         }
 
-        /* -------- FOOTER -------- */
         footer {
             text-align: center;
             padding: 40px 20px 30px 20px;
@@ -356,13 +346,20 @@
 
             .game-cover {
                 flex: 0 0 100%;
-                aspect-ratio: 16 / 9;
             }
 
             .btn {
                 width: 100%;
             }
         }
+		code {
+		background: #2a2a2a;
+		color: #d8d89b;
+		padding: 2px 6px;
+		border-radius: 3px;
+		font-family: Consolas, Monaco, "Courier New", monospace;
+		font-size: 14px;
+	}
     </style>
 </head>
 
@@ -382,31 +379,30 @@
 
 <main>
 
-    <!-- ГОРНА ЧАСТ: корица + инфо -->
     <div class="game-header">
-<div class="game-cover">
-    <img src="images/pm.png" alt="S.T.A.L.K.E.R.: Path in the Mist">
-</div>
+        <div class="game-cover">
+            <img src="images/pm.png" alt="S.T.A.L.K.E.R.: Path in the Mist">
+        </div>
 
         <div class="game-info">
             <h2>Path in the Mist</h2>
 
 <div class="game-description">
-    <p><strong>Сюжет:</strong> S.T.A.L.K.E.R.: Lost Alpha е мащабна модификация-явление, която има за цел да възроди оригиналната концепция за Зоната, замислена от разработчиците в периода 2002–2004 г. Историята предлага алтернативен и силно разширен поглед над събитията от Shadow of Chernobyl. Всички познати нива са изградени наново от нулата, добавени са напълно нови територии (като Тъмният пейзаж и Мъртвия град), а сюжетната линия е обогатена с нови мисии, фракции, интерактивни превозни средства и невиждани досега мистерии, скрити в недрата на Чернобил.</p>
+    <p><strong>Сюжет и концепция:</strong> S.T.A.L.K.E.R.: Path in the Mist е самостоятелна глобална сюжетна модификация, която предлага напълно нова, авторска история, развиваща се в познатата ни Зона. Проектът се отличава с изключително високо качество на скриптовете, уникален дизайн на нивата и детективски сюжет, който държи играча в напрежение до самия край. Вместо безкрайно изследване или война между фракциите, тук акцентът е върху разплитането на сложна конспирация, включваща тайни изследвания и военни интереси.</p>
 
-    <p><strong>Главен герой:</strong> Играчът отново влиза в ролята на Белязания – сталкер с пълна амнезия, открит сред труповете в „Камиона на смъртта". И докато татуировката на ръката му и мистериозната задача „Убий Стрелок" остават същите, пътят, по който ще премине, е коренно различен. Този път той ще трябва да разчита не само на оръжието си, но и на компютърни умения за хакване на системи, както и на способността си да оцелява в една много по-сурова и жива околна среда.</p>
+    <p><strong>Главен герой:</strong> Играчът влиза в ролята на Саван (Сава) – опитен и хладнокръвен сталкер, който не се интересува от легенди и артефакти, а работи главно за пари и конкретни поръчки. Заедно със своя верен приятел и партньор Борланд, те решават да приемат една на пръв поглед стандартна, но изключително доходоносна задача: да проникнат в строго охраняван и затворен изследователски комплекс в дълбочината на Зоната.</p>
 
-    <p><strong>Основна мисия:</strong> Мисията на Белязания се разгръща в много по-дълбока конспирация, отколкото в оригиналната игра. Освен преследването на Стрелок, главният герой ще трябва да си сътрудничи с нови групировки (като мистериозната „Грях"), да изследва огромни секретни подземни комплекси и да разкрие истинския произход на Зоната. Версията Enhanced Edition внася сериозни графични подобрения, преработен баланс на икономиката и оръжията, подобрен изкуствен интелект и по-стабилен енджин, правейки това „алтернативно пътуване" възможно най-атмосферно и завладяващо.</p>
+    <p><strong>Основна мисия:</strong> Това, което започва като обикновено проникване с цел кражба на данни, бързо се превръща в кошмар. Саван и Борланд се оказват в капан, а събитията ги въвличат в безмилостна игра на котка и мишка с военните, учените и мистериозна фракция, която контролира събитията от сенките. Играчът ще трябва да проучи преработени и напълно неузнаваеми локации (като Кордона и Завода „Росток“), да решава сложни логически пъзели, да извършва разузнавателни мисии и да взема решения, които ще определят съдбата на неговия партньор и самия край на историята.</p>	
 </div>
 
             <div class="meta-grid">
                 <div class="meta-item">
                     <span class="label">Статус</span>
-                    <span class="status status-ready">В редакция</span>
+                    <span class="status status-editing">В РЕДАКЦИЯ</span>
                 </div>
                 <div class="meta-item">
                     <span class="label">Версия</span>
-                    <span class="value">v1.0</span>
+                    <span class="value">v1.0-beta</span>
                 </div>
                 <div class="meta-item">
                     <span class="label">Дата</span>
@@ -414,45 +410,45 @@
                 </div>
                 <div class="meta-item">
                     <span class="label">Съвместимост</span>
-                    <span class="value">.......</span>
+                    <span class="value">SEREGA-LUS + PATCH 1.08.0</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ИНСТАЛАЦИЯ -->
     <section>
         <h3>Стъпки за инсталация</h3>
         <div class="install-steps">
             <ol>
-                <li>Изтеглете архива с българския превод от бутона по-долу.</li>
-                <li>Разархивирайте папката gamedata в инсталационната папка на играта.</li>
-                <li>Потвърдете замяната на файловете, ако бъдете попитан.</li>
-                <li>Стартирайте играта — преводът трябва да е активен.</li>
+                <li>Изтеглете играта от линка по-долу в раздел <em>Загрузка и установка.</em></li>
+                <li>Изтеглете и разахривирайте пач <em>SpectrumProject1.07<em> в инсталационната папка на играта.</li>
+                <li>Потвърдете замяната на файловете.</li>
+				<li>Изтеглете архива с българския превод от бутона по-долу.</li>
+                <li>Разархивирайте папката <code>gamedata</code> с вградения пач <em>SpectrumProject1.08.0<em>в инсталационната папка на играта.</li>
+                <li>Потвърдете замяната на файловете.</li>
+                <li>Стартирайте играта — преводът трябва да е активен.</li>                
             </ol>
         </div>
     </section>
 
-    <!-- ЕКИП -->
     <section>
         <h3>Екип по превода</h3>
         <div class="team-grid">
             <div class="team-member">
                 <span class="role">Преводач</span>
-                <span class="name">Калин Каменов а.к.а. Heinrich</span>
+                <span class="name">Калин Каменов a.k.a. Heinrich</span>
             </div>
             <div class="team-member">
                 <span class="role">Редактор</span>
-                <span class="name">Калин Каменов а.к.а. Heinrich</span>
+                <span class="name">Калин Каменов a.k.a. Heinrich</span>
             </div>
             <div class="team-member">
                 <span class="role">Тестер</span>
-                <span class="name">Калин Каменов а.к.а. Heinrich</span>
+                <span class="name">Калин Каменов a.k.a. Heinrich</span>
             </div>
         </div>
     </section>
 
-    <!-- ИЗТЕГЛЯНЕ -->
     <section>
         <h3>Изтегляне</h3>
         <p>
@@ -461,13 +457,10 @@
         </p>
 
         <div class="download-buttons">
-            <a href="https://github.com/Heinrich215/Heinrich215.github.io/releases/download/laee-v1.0/stalker-laee-bg-v1.0.zip" class="btn btn-translation" target="_blank">
+            <a href="#" class="btn btn-translation" target="_blank">
                 📥 ИЗТЕГЛИ ПРЕВОДА
             </a>
-            <a href="https://stalkermod.ru/modyi-lost-alpha/stalker-lost-alpha-enhanced-edition.html" class="btn btn-game" target="_blank" rel="noopener noreferrer">
-                🎮 СВАЛИ ИГРАТА (външен сайт)
-            </a>
-			<a href="https://stalkerportaal.ru/load/teni_chernobylja_globalnye_modifikacii/lost-alpha-enhanced-edition/136-1-0-3605" class="btn btn-game" target="_blank" rel="noopener noreferrer">
+            <a href="https://ap-pro.ru/forums/topic/128-put-vo-mgle/" class="btn btn-game" target="_blank" rel="noopener noreferrer">
                 🎮 СВАЛИ ИГРАТА (външен сайт)
             </a>
         </div>
@@ -491,7 +484,7 @@
         their authors (GSC Game World). Download links for the games point to external
         websites and are not hosted on this domain.
     </div>
-    © 2026 Калин Каменов а.к.а. Heinrich — S.T.A.L.K.E.R. Българска локализация
+    © 2026 Калин Каменов a.k.a. Heinrich — S.T.A.L.K.E.R. Българска локализация
 </footer>
 
 </body>
