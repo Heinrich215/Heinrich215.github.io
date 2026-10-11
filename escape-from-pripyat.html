@@ -352,6 +352,32 @@
                 width: 100%;
             }
         }
+		code {
+			background: #2a2a2a;
+			color: #d8d89b;
+			padding: 2px 6px;
+			border-radius: 3px;
+			font-family: Consolas, Monaco, "Courier New", monospace;
+			font-size: 14px;
+		}
+		section em {
+			color: #d8d89b;
+			font-style: italic;
+		}
+		.install-steps h4 {
+			color: #d8d89b;
+			font-size: 17px;
+			margin-top: 25px;
+			margin-bottom: 12px;
+			padding-bottom: 6px;
+			border-bottom: 1px solid #333;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.install-steps h4:first-child {
+			margin-top: 0;
+		}
     </style>
 </head>
 
@@ -398,11 +424,11 @@
                 </div>
                 <div class="meta-item">
                     <span class="label">Дата</span>
-                    <span class="value">15.09.2026</span>
+                    <span class="value">01.10.2026 г.</span>
                 </div>
                 <div class="meta-item">
                     <span class="label">Съвместимост</span>
-                    <span class="value">EFP 4.x+</span>
+                    <span class="value">EFP 4.2</span>
                 </div>
             </div>
         </div>
@@ -410,15 +436,47 @@
 
     <section>
         <h3>Стъпки за инсталация</h3>
-        <div class="install-steps">
-            <ol>
-                <li>Изтеглете архива с българския превод от бутона по-долу.</li>
-                <li>Разархивирайте файловете в главната папка на играта (там, където е <code>fsgame.ltx</code>).</li>
-                <li>Потвърдете замяната на файловете, ако бъдете попитан.</li>
-                <li>Стартирайте играта — преводът трябва да е активен.</li>
-                <li>Ако не се показва на български, влезте в <em>Options → Language</em> и изберете <em>Bulgarian</em>.</li>
-            </ol>
-        </div>
+<div class="install-steps">
+
+    <h4>1. Изтегляне</h4>
+    <ol>
+        <li>Изтеглете играта от бутоните по-долу: <code>stalker-anomaly-153</code>, <code>Mod.Organizer-2.4.4.7z</code>, <code>EFPv4-2_Anomaly.7z</code> и <code>EFPv4-2_MO2</code>.</li>
+    </ol>
+
+    <h4>2. Разархивиране</h4>
+    <ol>
+        <li>Създайте папка <code>EFP</code> и папка <code>MO2</code> (например <code>D:\Games</code>).</li>
+        <li>Разархивирайте <code>Anomaly-1.5.3-Full</code> в папка <code>EFP</code>.</li>
+        <li>Стартирайте <code>AnomalyLauncher</code> (<code>Play S.T.A.L.K.E.R. Anomaly</code>) един път до началното меню и излезте до Windows.</li>
+        <li>Разархивирайте <code>EFPv4-2_Anomaly</code> в папка <code>EFP</code> и потвърдете замяната на всички файлове.</li>
+        <li>Разархивирайте <code>Mod.Organizer-2.4.4</code> в папка <code>MO2</code>.</li>
+        <li>Разархивирайте <code>EFPv4-2_MO2</code> в папка <code>MO2</code>.</li>
+    </ol>
+
+    <h4>3. Настройка на Mod Organizer</h4>
+    <ol>
+        <li>Стартирайте <code>ModOrganizer.exe</code> с администраторски права.</li>
+        <li>Кликнете <code>Next</code> → изберете <code>Create a portable instance</code>.</li>
+        <li>Изберете <code>Browse</code> най-долу и посочете папка <code>EFP</code>. Кликнете <code>Next</code> → <code>Finish</code>.</li>
+        <li>На прозореца <code>Show tutorial</code> дайте <code>NO</code>. На <code>Register</code> също дайте <code>No</code>.</li>
+        <li>Стартирайте <code>ModOrganizer.exe</code> от <code>D:\Games\MO2</code>. Горе ляво изберете <code>Profile</code> → <code>EFP4.2</code>.</li>
+        <li>Уверете се, че списъкът с модове започва с <code>START EFP</code> и завършва с <code>END EFP</code>.</li>
+    </ol>
+
+    <h4>4. Стартиране и превод</h4>
+    <ol>
+        <li>Стартирайте с бутона <code>Run</code> горе дясно. Ако изскочи прозорец — дайте <code>Unlock</code>.</li>
+        <li>Преди стартиране изберете <code>DirectX</code> и отметнете <code>Reset graphics settings</code>.</li>
+        <li>Отметнете и <code>Delete Shader Cache</code>.</li>
+        <li>По желание: създайте <code>Shortcut</code> под <code>Run</code>, за да не стартирате всеки път <code>ModOrganizer</code>.</li>
+        <li>По желание: сменете иконата на <code>Shortcut</code>-а — свойства → <code>D:\Games\MO2</code> → <code>ESP.ICO</code>.</li>
+        <li>Изтеглете архива с българския превод от бутона по-долу.</li>
+        <li>Разархивирайте файловете там, където са папките <code>EFP</code> и <code>MO2</code> (напр. <code>D:\Games</code>).</li>
+        <li>Потвърдете замяната на файловете, ако бъдете попитан.</li>
+        <li>Стартирайте играта — преводът трябва да е активен.</li>
+    </ol>
+
+</div>
     </section>
 
     <section>
@@ -426,15 +484,15 @@
         <div class="team-grid">
             <div class="team-member">
                 <span class="role">Преводач</span>
-                <span class="name">Heinrich215</span>
+                <span class="name">Калин Каменов a.k.a. Heinrich</span>
             </div>
             <div class="team-member">
                 <span class="role">Редактор</span>
-                <span class="name">Heinrich215</span>
+                <span class="name">Калин Каменов a.k.a. Heinrich</span>
             </div>
             <div class="team-member">
                 <span class="role">Тестер</span>
-                <span class="name">Heinrich215</span>
+                <span class="name">Калин Каменов a.k.a. Heinrich</span>
             </div>
         </div>
     </section>
@@ -446,17 +504,24 @@
             Ако все още не притежавате играта, можете да я свалите от външен сайт (виж втория бутон).
         </p>
 
-        <div class="download-buttons">
-            <a href="#" class="btn btn-translation" target="_blank">
-                📥 ИЗТЕГЛИ ПРЕВОДА
-            </a>
-            <a href="https://pb.wtf/game/413985/" class="btn btn-game" target="_blank" rel="noopener noreferrer">
-                🎮 СВАЛИ ИГРАТА (външен сайт)
-            </a>
-        </div>
-        <span class="btn-note">
-            „Свали играта" отваря външен сайт (pb.wtf) в нов таб. Ние не хостваме самата игра.
-        </span>
+	<div class="download-buttons">
+		<a href="#" class="btn btn-translation" target="_blank">
+			📥 ИЗТЕГЛИ ПРЕВОДА
+		</a>
+		<a href="https://www.moddb.com/mods/stalker-anomaly/downloads/stalker-anomaly-153" class="btn btn-game" target="_blank" rel="noopener noreferrer">
+			🎮 ANOMALY 1.5.3
+		</a>
+		<a href="https://github.com/ModOrganizer2/modorganizer/releases/download/v2.4.4/Mod.Organizer-2.4.4.7z" class="btn btn-game" target="_blank" rel="noopener noreferrer">
+			⚙️ MOD ORGANIZER 2.4.4
+		</a>
+		<a href="https://drive.google.com/drive/folders/1-SkQ5RVsFGN4fRFwAlK6d5Qdi2ZSV80M" class="btn btn-game" target="_blank" rel="noopener noreferrer">
+			📦 EFP 4.2 (2 ФАЙЛА)
+		</a>
+	</div>
+	<span class="btn-note">
+		„Anomaly 1.5.3" е основната игра, „Mod Organizer 2.4.4" е инструмент за модове, а „EFP 4.2" съдържа двата архивни файла (Anomaly и MO2 версии).<br>
+		„Свали играта" отваря външен сайт в нов таб. Аз не хоствам самата игра.
+	</span>
     </section>
 
 </main>
@@ -474,7 +539,7 @@
         their authors (GSC Game World). Download links for the games point to external
         websites and are not hosted on this domain.
     </div>
-    © 2026 Heinrich215 — S.T.A.L.K.E.R. Българска локализация
+    © 2026 Калин Каменов a.k.a. Heinrich — S.T.A.L.K.E.R. Българска локализация
 </footer>
 
 </body>
